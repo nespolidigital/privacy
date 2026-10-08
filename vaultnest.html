@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VaultNest — Privacy Policy</title>
+<style>
+  :root { --bg:#f8f8f8; --fg:#0a0a0a; --muted:#555; --card:#fff; --border:#ebebeb; --accent:#0d766e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0a0a0a; --fg:#f5f5f5; --muted:#bbb; --card:#111; --border:#1e1e1e; --accent:#14b8a6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
+  main { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.1rem; margin:32px 0 8px; }
+  p, li { color:var(--muted); }
+  strong { color:var(--fg); }
+  ul { padding-left:20px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px 20px; margin-top:16px; }
+  a { color:var(--accent); }
+  footer { margin-top:40px; font-size:.85rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>VaultNest — Política de Privacidade / Privacy Policy / Política de Privacidad</h1>
+  <p>Última atualização / Last updated / Última actualización: 8/10/2026</p>
+  <p><a href="#pt">Português</a> · <a href="#en">English</a> · <a href="#es">Español</a></p>
+
+  <section id="pt">
+  <div class="card"><p>O <strong>VaultNest</strong> é um cofre de senhas, cartões, documentos e códigos 2FA que funciona offline, desenvolvido pela <strong>Nespoli Digital</strong>. Esta política segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p></div>
+  <h2>1. Sem cadastro</h2>
+  <p>Não pedimos nome, e-mail ou login. Não existe conta de usuário nem sincronização na nuvem.</p>
+  <h2>2. Dados guardados no seu aparelho, criptografados</h2>
+  <p>Logins, senhas, notas, cartões, documentos, códigos 2FA, anexos e pastas ficam <strong>somente no seu dispositivo</strong>, criptografados com AES-256-GCM. A chave é derivada da sua senha mestra (PBKDF2-SHA256, 600.000 iterações) e nunca sai do aparelho. Nós <strong>não temos como ler, recuperar ou redefinir</strong> seus dados: sem a senha mestra ou a chave de recuperação, ninguém abre o cofre — nem nós.</p>
+  <p>O backup (.vnbackup) também é criptografado e vai só para onde você escolher na tela de compartilhar do Android. A exportação em CSV, se você a usar, gera um arquivo <strong>sem criptografia</strong>, exige a senha mestra e deve ser apagado depois de usado.</p>
+  <h2>3. Proteções do app</h2>
+  <ul>
+    <li>O cofre bloqueia sozinho após o tempo escolhido e ao sair do app.</li>
+    <li>As telas do app são protegidas contra capturas de tela e não aparecem na lista de apps recentes (FLAG_SECURE).</li>
+    <li>Senhas copiadas são marcadas como sensíveis e apagadas da área de transferência após o tempo configurado.</li>
+    <li>O app não usa backup automático do Android.</li>
+  </ul>
+  <h2>4. Permissões</h2>
+  <ul>
+    <li><strong>Biometria:</strong> opcional. A impressão digital ou o rosto ficam no sistema do Android; o app só recebe a confirmação. A chave do cofre é guardada no Android Keystore, protegida pela biometria.</li>
+    <li><strong>Câmera:</strong> só quando você escolhe ler um QR code de 2FA ou fotografar um documento para anexar. A foto é criptografada antes de ser salva.</li>
+    <li><strong>Notificações:</strong> lembretes opcionais de backup e de revisão de senhas, agendados no próprio aparelho, sem mostrar dados do cofre.</li>
+    <li><strong>Internet:</strong> usada apenas para confirmar a assinatura Premium.</li>
+  </ul>
+  <h2>5. Assinatura Premium</h2>
+  <p>Processada pela <strong>Google Play</strong>. Para confirmar a assinatura, o comprovante da compra (purchase token) é enviado ao nosso servidor, que o consulta junto à Google. Não recebemos dados de cartão e <strong>nenhum dado do cofre</strong> é enviado. O servidor usa o endereço IP de cada requisição só em memória, para limitar abusos; ele não é gravado. Cancele em Play Store &gt; Pagamentos e assinaturas. Se a assinatura acabar, seus itens continuam acessíveis e exportáveis.</p>
+  <h2>6. Sem anúncios e sem rastreamento</h2>
+  <p>O VaultNest não exibe anúncios e não usa SDKs de análise, publicidade ou rastreamento.</p>
+  <h2>7. Compartilhamento, direitos e exclusão</h2>
+  <p>Não vendemos nem compartilhamos dados — nós não temos acesso a eles. Você pode exportar, corrigir e apagar tudo a qualquer momento: veja <a href="vaultnest-exclusao.html">Como excluir seus dados do VaultNest</a>.</p>
+  <h2>8. Contato</h2>
+  <p>Nespoli Digital — <a href="mailto:nespolidigital@gmail.com">nespolidigital@gmail.com</a></p>
+  </section>
+
+  <section id="en">
+  <h2>English</h2>
+  <p><strong>VaultNest</strong> is an offline vault for passwords, cards, documents and 2FA codes by <strong>Nespoli Digital</strong>.</p>
+  <ul>
+    <li><strong>No account:</strong> we never ask for your name or e-mail. There is no cloud sync.</li>
+    <li><strong>Encrypted, on-device data:</strong> logins, passwords, notes, cards, documents, 2FA codes, attachments and folders are stored only on your device, encrypted with AES-256-GCM using a key derived from your master password (PBKDF2-SHA256, 600,000 iterations). We <strong>cannot read, recover or reset</strong> your data. Backups (.vnbackup) are encrypted and go only where you choose. The optional CSV export is <strong>unencrypted</strong>, requires your master password and should be deleted after use.</li>
+    <li><strong>Protections:</strong> auto-lock, screenshot and recent-apps protection (FLAG_SECURE), copied secrets marked sensitive and cleared from the clipboard, no Android auto-backup.</li>
+    <li><strong>Permissions:</strong> optional biometrics (handled by Android; the vault key is kept in the Android Keystore); camera only to scan 2FA QR codes or photograph documents (encrypted before saving); local reminder notifications without vault content; internet only to verify the Premium subscription.</li>
+    <li><strong>Premium subscription:</strong> processed by Google Play. The purchase token is checked by our server with Google; no card data and <strong>no vault data</strong> is sent. The server uses request IP addresses only in memory to limit abuse. If the subscription ends, your items stay accessible and exportable.</li>
+    <li><strong>No ads, no tracking:</strong> no advertising, analytics or tracking SDKs.</li>
+    <li><strong>Your rights:</strong> we don't sell or share data — we have no access to it. Export or delete everything at any time: <a href="vaultnest-exclusao.html#en">how to delete your data</a>.</li>
+    <li><strong>Contact:</strong> <a href="mailto:nespolidigital@gmail.com">nespolidigital@gmail.com</a></li>
+  </ul>
+  </section>
+
+  <section id="es">
+  <h2>Español</h2>
+  <p><strong>VaultNest</strong> es una bóveda sin conexión para contraseñas, tarjetas, documentos y códigos 2FA de <strong>Nespoli Digital</strong>.</p>
+  <ul>
+    <li><strong>Sin cuenta:</strong> no pedimos nombre ni correo. No hay sincronización en la nube.</li>
+    <li><strong>Datos cifrados en el dispositivo:</strong> inicios de sesión, contraseñas, notas, tarjetas, documentos, códigos 2FA, adjuntos y carpetas se guardan solo en tu dispositivo, cifrados con AES-256-GCM con una clave derivada de tu contraseña maestra (PBKDF2-SHA256, 600.000 iteraciones). <strong>No podemos leer, recuperar ni restablecer</strong> tus datos. Las copias de seguridad (.vnbackup) están cifradas y van solo a donde elijas. La exportación CSV opcional <strong>no está cifrada</strong>, exige la contraseña maestra y debe borrarse después de usarla.</li>
+    <li><strong>Protecciones:</strong> bloqueo automático, protección contra capturas de pantalla y apps recientes (FLAG_SECURE), secretos copiados marcados como sensibles y borrados del portapapeles, sin copia automática de Android.</li>
+    <li><strong>Permisos:</strong> biometría opcional (gestionada por Android; la clave de la bóveda se guarda en el Android Keystore); cámara solo para escanear códigos QR de 2FA o fotografiar documentos (cifrados antes de guardarse); notificaciones locales de recordatorio sin contenido de la bóveda; internet solo para verificar la suscripción Premium.</li>
+    <li><strong>Suscripción Premium:</strong> procesada por Google Play. El comprobante de compra se verifica en nuestro servidor con Google; no se envían datos de tarjeta ni <strong>datos de la bóveda</strong>. El servidor usa la IP de cada solicitud solo en memoria para limitar abusos. Si la suscripción termina, tus elementos siguen accesibles y exportables.</li>
+    <li><strong>Sin anuncios ni rastreo:</strong> sin SDKs de publicidad, analítica ni rastreo.</li>
+    <li><strong>Tus derechos:</strong> no vendemos ni compartimos datos; no tenemos acceso a ellos. Exporta o elimina todo cuando quieras: <a href="vaultnest-exclusao.html#es">cómo eliminar tus datos</a>.</li>
+    <li><strong>Contacto:</strong> <a href="mailto:nespolidigital@gmail.com">nespolidigital@gmail.com</a></li>
+  </ul>
+  </section>
+
+  <footer>© 2026 Nespoli Digital</footer>
+</main>
+</body>
+</html>
