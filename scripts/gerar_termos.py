@@ -5,7 +5,7 @@ import html, os, re, sys
 DATA = '04/11/2026'
 SAUDE = {'vittali', 'dens', 'clinus'}
 # jogos de festa para maiores de 18 (bebida, desafios)
-FESTA = {'bottlespinner', 'challengecards', 'challengedice', 'dareparty', 'nightquests', 'pointfingers', 'potatoonfire', 'spicelevels'}
+FESTA = {'penaltyroulette', 'bottlespinner', 'challengecards', 'challengedice', 'dareparty', 'nightquests', 'pointfingers', 'potatoonfire', 'spicelevels'}
 
 def limpa(t):
     t = re.sub(r'<[^>]+>', '', t)
